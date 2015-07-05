@@ -18,6 +18,8 @@
 		52BE4463168C296800381DBD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BE4462168C296800381DBD /* Default-568h@2x.png */; };
 		52BE4466168C296800381DBD /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE4465168C296800381DBD /* CViewController.m */; };
 		52BE4469168C296800381DBD /* CViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BE4467168C296800381DBD /* CViewController.xib */; };
+		52BE447B168C358A00381DBD /* Graphic.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE447A168C358A00381DBD /* Graphic.m */; };
+		52BE447E168C35A000381DBD /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BE447D168C35A000381DBD /* DrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		52BE4464168C296800381DBD /* CViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CViewController.h; sourceTree = "<group>"; };
 		52BE4465168C296800381DBD /* CViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CViewController.m; sourceTree = "<group>"; };
 		52BE4468168C296800381DBD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CViewController.xib; sourceTree = "<group>"; };
+		52BE4479168C358A00381DBD /* Graphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graphic.h; sourceTree = "<group>"; };
+		52BE447A168C358A00381DBD /* Graphic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graphic.m; sourceTree = "<group>"; };
+		52BE447C168C35A000381DBD /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		52BE447D168C35A000381DBD /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,10 @@
 				52BE445C168C296800381DBD /* CAppDelegate.m */,
 				52BE4464168C296800381DBD /* CViewController.h */,
 				52BE4465168C296800381DBD /* CViewController.m */,
+				52BE4479168C358A00381DBD /* Graphic.h */,
+				52BE447A168C358A00381DBD /* Graphic.m */,
+				52BE447C168C35A000381DBD /* DrawView.h */,
+				52BE447D168C35A000381DBD /* DrawView.m */,
 				52BE4467168C296800381DBD /* CViewController.xib */,
 				52BE4453168C296800381DBD /* Supporting Files */,
 			);
@@ -177,6 +187,8 @@
 				52BE4459168C296800381DBD /* main.m in Sources */,
 				52BE445D168C296800381DBD /* CAppDelegate.m in Sources */,
 				52BE4466168C296800381DBD /* CViewController.m in Sources */,
+				52BE447B168C358A00381DBD /* Graphic.m in Sources */,
+				52BE447E168C35A000381DBD /* DrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,10 +269,13 @@
 		52BE446D168C296800381DBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 龍之助 森本 (VP759GCM74)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spectrum/Spectrum-Prefix.pch";
 				INFOPLIST_FILE = "Spectrum/Spectrum-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E28246AC-D58E-447F-8272-97F47F045332";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -268,10 +283,12 @@
 		52BE446E168C296800381DBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 龍之助 森本 (VP759GCM74)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spectrum/Spectrum-Prefix.pch";
 				INFOPLIST_FILE = "Spectrum/Spectrum-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E28246AC-D58E-447F-8272-97F47F045332";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -295,6 +312,7 @@
 				52BE446E168C296800381DBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

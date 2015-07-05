@@ -1,9 +1,5 @@
-//
-//  CAppDelegate.m
-//  Spectrum
-//
-//  Created by imai-book on 12/12/27.
-//  Copyright (c) 2012年 imai-book. All rights reserved.
+//  Created by morimotor on 12/12/27.
+//  Copyright (c) 2012年 morimotor. All rights reserved.
 //
 
 #import "CAppDelegate.h"
